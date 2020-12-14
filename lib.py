@@ -1,5 +1,5 @@
 import random
-
+# list with difference item 
 def distinct(list):
     list_result = []
     i = 0
@@ -39,7 +39,7 @@ def count_times_of_group(list):
         list_result.append(obj)
     return list_result
 
-
+# binary search 
 def find(L, target):
     start = 0
     end = len(L) - 1

@@ -1,6 +1,6 @@
 import read, lib, write
 
-
+# create file json to devide group label 
 def create_file_in_folder_label(pre_path):
     print('---------create_file_in_folder_label---------')
     data_main_train_sort = read.elements_in_each_line_of_file(pre_path + 'maintrain_sort.txt')

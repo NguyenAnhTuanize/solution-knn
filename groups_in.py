@@ -1,6 +1,6 @@
 import read, write
 
-
+# get label of file 
 def get_label(line):
     return line[0]
 

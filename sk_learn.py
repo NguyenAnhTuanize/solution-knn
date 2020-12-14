@@ -29,7 +29,7 @@ def get_target_test():
 if __name__ == "__main__":
     target_test = get_target_test()
     L_X, L_y = read_list_percent()
-    neigh = KNeighborsClassifier(n_neighbors=42)
+    neigh = KNeighborsClassifier(n_neighbors=45)
     neigh.fit(L_X, L_y)
     data_test = read.matrix_percent(path=path_test + 'test_percent.txt')
     pred = neigh.predict(data_test)

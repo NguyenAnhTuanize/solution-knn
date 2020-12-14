@@ -1,6 +1,6 @@
 import read, os, json, lib, write
 
-
+# get all group in a file 
 def create_file_all_group(pre_path):
     print('---------create_file_all_group---------')
     list_file_name = read.name_file_in_folder(path_folfer=pre_path + 'divide_groups_in_label')
@@ -14,7 +14,7 @@ def create_file_all_group(pre_path):
     s_list_group = lib.distinct(list_group)
     write.each_line_by_path(path_file=pre_path + 'all_group.txt', list_data=s_list_group)
 
-
+# time appear group in file 
 def create_file_analysis_all_group(pre_path):
     print('---------create_file_analysis_all_group---------')
     f_all_group = read.line_in_file_rstrip(path_file=pre_path + 'all_group.txt')
@@ -35,7 +35,7 @@ def create_file_analysis_all_group(pre_path):
         matrix.append(list_find_times)
     write.matrix(path_file=pre_path + 'analysis_all_group.txt', list_data=matrix)
 
-
+# set label for group in group_label.json
 def filter_file_analysis_all_group(pre_path):
     print('---------filter_file_analysis_all_group---------')
     matrix = read.matrix(path=pre_path + 'analysis_all_group.txt')
